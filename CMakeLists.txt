@@ -27,15 +27,12 @@ include(RobomongoPackage)
 
 # Search for dependencies
 find_package(Threading REQUIRED)    # Wrapper arround CMake "Threads" module
-find_package(Qt5Core REQUIRED)
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5PrintSupport REQUIRED)
-find_package(Qt5Network REQUIRED)
-find_package(Qt5Xml REQUIRED)
-if(NOT SYSTEM_LINUX)
-    find_package(Qt5WebEngineWidgets REQUIRED)
-endif()
+find_package(Qt6Core REQUIRED)
+find_package(Qt6Gui REQUIRED)
+find_package(Qt6Widgets REQUIRED)
+find_package(Qt6PrintSupport REQUIRED)
+find_package(Qt6Network REQUIRED)
+find_package(Qt6Xml REQUIRED)
 find_package(MongoDB REQUIRED)
 find_package(OpenSSL REQUIRED)
 
